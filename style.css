@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(221, 218, 218, 0.36); /* Hatalı şeffaf renk düzenlendi */
+}
+
+.global-notification {
+  color: aliceblue;
+  background-color: #0a0811;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+.global-notification a {
+  color: rgb(151, 231, 141);
+  font-weight: 600;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-row {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-center .navigation .menu-list {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  column-gap: 80px;
+  position: relative;
+}
+
+.header-center .navigation .menu-list .menu-link {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.header-right .header-right-links {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.header-right .bi-person-badge {
+  font-size: 22px;
+}
+
+.header-right .search-toggle {
+  border: none;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.header-right .search-toggle i {
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+.header-cart {
+  position: relative;
+  right: -37%; /* Değer gereksiz aşırı olabilir, gerekirse yeniden ayarlayın */
+}
+
+.header-cart .header-cart-link {
+  position: relative;
+}
+
+.header-cart .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1); /* Şeffaf arkaplan eklendi */
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Sayıyı ortalamak için */
+}
+
+.menu-dropdown-wrapper ul {
+  width: 220px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu-dropdown-wrapper .menu-dropdown-content li {
+  display: flex;
+  border: #f0f0f0 1px solid;
+  flex-direction: column;
+  padding-left: 25%;
+}
+.menu-dropdown-wrapper .menu-dropdown-content a {
+  font-size: 13px;
+  font-weight: 350;
+  letter-spacing: 1.2px;
+  transition: all 1.3s ease;
+}
+.menu-dropdown-wrapper .menu-dropdown-content a:hover {
+  color: rgb(41, 238, 15);
+  
+}
+
+.menu-dropdown-wrapper:hover .menu-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+}
